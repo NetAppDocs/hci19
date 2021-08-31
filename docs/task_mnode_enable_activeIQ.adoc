@@ -1,0 +1,112 @@
+---
+sidebar: sidebar
+permalink: docs/task_mnode_enable_activeIQ.html
+summary: You can use the management node (mNode) to enable NetApp Active IQ and NetApp HCI telemetry.
+keywords: netapp, hci, api, enable, active iq, activeiq, hci monitoring
+---
+
+= Enable Active IQ and NetApp HCI monitoring
+
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+You can enable Active IQ storage monitoring (for SolidFire all-flash storage and NetApp HCI) and NetApp HCI compute monitoring (for NetApp HCI only) if you did not already do so during installation or upgrade. You might need to use this procedure if you disabled telemetry using the NetApp HCI Deployment Engine or did not set up SolidFire Active IQ during installation for a SolidFire all-flash storage system.
+
+The Active IQ collector service forwards configuration data and Element software-based cluster performance metrics to NetApp Active IQ for historical reporting and near real-time performance monitoring. The NetApp HCI monitoring service enables forwarding of storage cluster faults to vCenter for alert notification.
+
+.Before you begin
+* Your storage cluster is running NetApp Element software 11.3 or later.
+* You have deployed a management node running version 11.3 or later.
+* You have internet access. The Active IQ collector service cannot be used from dark sites that do not have external connectivity.
+
+.Steps
+. Get the base asset ID for the installation:
+.. Open the inventory service REST API UI on the management node:
++
+----
+https://[management node IP]/inventory/1/
+----
+.. Click *Authorize* and complete the following:
+... Enter the cluster user name and password.
+... Enter the client ID as `mnode-client`.
+... Click *Authorize* to begin a session.
+... Close the window.
+.. From the REST API UI, click *GET ​/installations*.
+.. Click *Try it out*.
+.. Click *Execute*.
+.. From the code 200 response body, copy the `id` for the installation.
++
+[subs=+quotes]
+----
+{
+  "installations": [
+    {
+      "_links": {
+        "collection": "https://10.111.211.111/inventory/1/installations",
+        "self": "https://10.111.217.111/inventory/1/installations/abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x"
+      },
+      *"id": "abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x",*
+----
++
+NOTE: Your installation has a base asset configuration that was created during installation or upgrade.
+
+. Activate telemetry:
+.. Access the mnode service API UI on the management node by entering the management node IP address followed by `/mnode`:
++
+----
+https://[management node IP]/mnode
+----
+
+.. Click *Authorize* or any lock icon and complete the following:
+... Enter the cluster user name and password.
+... Enter the client ID as `mnode-client`.
+... Click *Authorize* to begin a session.
+... Close the window.
+.. Configure the base asset:
+... Click *PUT /assets/{asset_id}*.
+... Click *Try it out*.
+... Enter the following in the JSON payload:
++
+----
+{
+"telemetry_active": true
+"config": {}
+}
+----
+... Enter the base ID from the previous step in *asset_ID*.
+... Click *Execute*.
++
+The Active IQ service is automatically restarted whenever assets are changed. Modifying assets results in a short delay before settings are applied.
+
+. If you have not already done so, add a vCenter controller asset for NetApp HCI monitoring (NetApp HCI installations only) and Hybrid Cloud Control (for all installations) to the management node known assets:
++
+NOTE: A controller asset is required for NetApp HCI monitoring services.
+
+.. Click *POST /assets/{asset_id}/controllers* to add a controller sub-asset.
+.. Click *Try it out*.
+.. Enter the parent base asset ID you copied to your clipboard in the *asset_id* field.
+.. Enter the required payload values with `type` as `vCenter` and vCenter credentials.
++
+----
+{
+"username": "string",
+"password": "string",
+"ip": "string",
+"type": "vCenter",
+"host_name": "string",
+"config": {}
+}
+----
++
+NOTE: `ip` is the vCenter IP address.
+
+.. Click *Execute*.
+
+[discrete]
+== Find more information
+* https://docs.netapp.com/us-en/vcp/index.html[NetApp Element Plug-in for vCenter Server^]
+* https://www.netapp.com/hybrid-cloud/hci-documentation/[NetApp HCI Resources Page^]
