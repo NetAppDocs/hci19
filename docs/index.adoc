@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: docs/index.html
+summary: NetApp HCI provides both storage and compute resources, combining them to build a VMware vSphere environment backed by the capabilities of NetApp Element software.
+keywords: netapp, hci, on premise, hybrid cloud control, hcc, kubernetes
+redirect: hci/index.html
+---
+
+= NetApp HCI configuration and management documentation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+NetApp HCI provides both storage and compute resources, combining them to build a VMware vSphere environment backed by the capabilities of NetApp Element software.
+
+You can upgrade, expand, and monitor your system with the NetApp Hybrid Cloud Control interface and manage NetApp HCI resources with NetApp Element Plug-in for vCenter Server.
+
+== Discover what's new
+
+* link:rn_whatsnew.html[What's new in NetApp HCI]
+* https://docs.netapp.com/us-en/element-software/concepts/concept_rn_whats_new_element.html[What's new in NetApp Element software^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes[What's new in management services for Element software and NetApp HCI^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2866569[What's new in NetApp Element Plug-in for vCenter Server^]
+
+== Get started with NetApp HCI
+
+* link:task_hci_getstarted.html[NetApp HCI installation and deployment overview]
+* link:concept_hci_product_overview.html[Review basic concepts]
+
+[discrete]
+== Find more information
+* https://docs.netapp.com/us-en/vcp/index.html[NetApp Element Plug-in for vCenter Server^]
+* https://www.netapp.com/us/documentation/hci.aspx[NetApp HCI Resources page^]

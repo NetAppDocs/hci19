@@ -1,0 +1,91 @@
+---
+sidebar: sidebar
+permalink: docs/hci_prereqs_network_configuration.html
+summary: Learn about network configuration options for NetApp HCI.
+keywords: netapp, hci, cabling, network configuration
+---
+
+= Network configuration
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+:keywords: netapp, hci, cabling, network configuration
+
+[.lead]
+NetApp HCI can utilize multiple different network cabling and VLAN configurations. It is important to plan your network configuration to ensure a successful deployment.
+
+== Required network segments
+NetApp HCI requires a minimum of three network segments: management, storage, and virtualization traffic (which includes virtual machines and VMware vMotion traffic). You can also separate virtual machine and vMotion traffic. These network segments usually exist as logically separated VLANs in the NetApp HCI network infrastructure.
+
+How compute and storage nodes connect to these networks depends on how you design the network and cable the nodes. The sample network illustrations in this guide assume the following networks:
+
+|===
+|Network name |VLAN ID
+
+|Management
+|100
+
+|Storage
+|105
+
+|vMotion
+|107
+
+|Virtual machines
+|200, 201
+|===
+
+For automatic discovery and configuration of your NetApp HCI nodes in the NetApp Deployment Engine, you must have a network segment that is available as an untagged or native VLAN on all switch ports that are used for the SFP+/SFP28 interfaces on the nodes. This will provide layer 2 communication between all nodes for discovery and deployment. Without a native VLAN, you must configure the SFP+/SFP28 interfaces of all nodes manually with a VLAN and IPv4 address to be discoverable. In the network configuration examples in this document, the management network (VLAN ID 100) is used for this purpose.
+
+The NetApp Deployment Engine enables you to quickly configure networks for compute and storage nodes during the initial deployment. You can place certain built-in management components such as vCenter and the management node on their own network segment. These network segments require routing to allow vCenter and the management node to communicate with storage and compute management networks. In most deployments those components use the same management network (VLAN ID 100 in this example).
+
+NOTE: You configure virtual machine networks using vCenter. The default virtual machine network (port group "VM_Network") in NetApp HCI deployments is configured without a VLAN ID. If you plan to use multiple tagged virtual machine networks (VLAN IDs 200 and 201 in the preceding example), ensure you include them in the initial network planning.
+
+== Network configuration and cabling options
+You can use a two-cable network configuration for the H410C compute nodes, simplifying cable routing. This configuration uses two SFP+/SFP28 interfaces plus an optional (but recommended) RJ45 interface for IPMI communication. These nodes can also use a six-cable configuration with two RJ45 and four SFP28/SFP+ interfaces.
+
+The H410S and H610S storage nodes support a network topology that uses four network ports (ports A through D).
+
+Compute nodes support three network topologies, depending on the hardware platform:
+
+|===
+|Configuration option |Cabling for H410C nodes |Cabling for H610C nodes |Cabling for H615C nodes
+
+|Option A
+|Two cables using ports D and E
+|Two cables using ports C and D
+|Two cables using ports A and B
+
+|Option B
+|Six cables using ports A through F
+|Not available
+|Not available
+
+|Option C
+3+|Similar to option B, but with native VLANs (or "access ports") on the switch for the management, storage, and vMotion networks
+|===
+
+Nodes that do not have the correct number of connected cables cannot participate in the deployment. For example, you cannot deploy a compute node in a six-cable configuration if it only has ports D and E connected.
+
+NOTE: You can adjust the NetApp HCI network configuration after deployment to meet infrastructure needs. However, when you expand NetApp HCI resources, remember that new nodes must have the same cable configuration as the existing compute and storage nodes.
+
+[NOTE]
+====
+If the NetApp Deployment Engine fails because your network does not support jumbo frames, you can perform one of the following workarounds:
+
+* Use a static IP address and manually set a maximum transmission unit (MTU) of 9000 bytes on the Bond10G network.
+* Configure the Dynamic Host Configuration Protocol to advertise an interface MTU of 9000 bytes on the Bond10G network.
+====
+
+.Network configuration options
+
+* link:hci_prereqs_network_configuration_option_A.html[Network configuration option A]
+* link:hci_prereqs_network_configuration_option_B.html[Network configuration option B]
+* link:hci_prereqs_network_configuration_option_C.html[Network configuration option C]
+
+[discrete]
+== Find more information
+*	https://www.netapp.com/hybrid-cloud/hci-documentation/[NetApp HCI Resources page^]
+*	https://docs.netapp.com/us-en/vcp/index.html[NetApp Element Plug-in for vCenter Server^]
