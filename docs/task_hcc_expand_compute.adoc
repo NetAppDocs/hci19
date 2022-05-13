@@ -27,10 +27,10 @@ After you finish NetApp HCI deployment, you can expand and configure NetApp HCI 
 * Ensure that each new node uses the same network topology and cabling as the existing storage or compute clusters.
 
 .Steps
-. Open a web browser and browse to the IP address of the management node. For example:
+. Open the IP address of the management node in a web browser. For example:
 +
 ----
-https://[management node IP address]
+https://<ManagementNodeIP>
 ----
 . Log in to NetApp Hybrid Cloud Control by providing the NetApp HCI storage cluster administrator credentials.
 . Click *Expand* at the top right corner of the interface.
