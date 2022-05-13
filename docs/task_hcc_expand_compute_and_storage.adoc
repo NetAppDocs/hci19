@@ -36,10 +36,10 @@ After you finish NetApp HCI deployment, you can expand and configure NetApp HCI 
 * If you are adding compute nodes with CPU generations that are different than the CPU generation of the existing compute nodes and Enhanced vMotion Compatibility (EVC) is disabled on the controlling vCenter instance, you must enable EVC before proceeding. This ensures vMotion functionality after expansion is complete.
 
 .Steps
-. Open a web browser and browse to the IP address of the management node. For example:
+. Open the IP address of the management node in a web browser. For example:
 +
 ----
-https://[management node IP address]
+https://<ManagementNodeIP>
 ----
 . Log in to NetApp Hybrid Cloud Control by providing the NetApp HCI storage cluster administrator credentials.
 . Click *Expand* at the top right corner of the interface.

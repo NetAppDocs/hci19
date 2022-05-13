@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: docs/task_hcc_upgrade_element_prechecks.html
-summary: As part of a NetApp HCI or SolidFire storage system upgrade, you need to run health checks for NetApp Element software.
+summary: As part of a NetApp HCI system upgrade, you need to run health checks for NetApp Element software.
 keywords: netapp, storage prechecks, element upgrade, healthtools, sfupgradecheck
 ---
 
@@ -18,12 +18,24 @@ You must run health checks prior to upgrading Element storage to ensure all stor
 
 .What you'll need
 
-* You have updated to the latest management services bundle (2.10.27 or later).
+* *Management services*: You have updated to the latest management services bundle (2.10.27 or later).
 +
 IMPORTANT: You must upgrade to the latest management services bundle before upgrading your Element software.
 
-* You are running management node 11.3 or later.
-* Your cluster version is running NetApp Element software 11.3 or later.
+* *Management node*: You are running management node 11.3 or later.
+* *Element software*: Your cluster version is running NetApp Element software 11.3 or later.
+* *End User License Agreement (EULA)*: Beginning with management services 2.20, you must accept and save the EULA before using the NetApp Hybrid Cloud Control UI or API to run Element storage health checks:
++
+. Open the IP address of the management node in a web browser:
++
+----
+https://<ManagementNodeIP>
+----
+. Log in to NetApp Hybrid Cloud Control by providing the storage cluster administrator credentials.
+. Select *Upgrade* near the top right of the interface.
+. The EULA pops up. Scroll down, select *I accept for current and all future updates*, and select *Save*.
++
+NOTE: When you accept the EULA, it is recorded for all future updates and the automatic download feature is enabled. You will receive updates on NetApp software updates and upgrades, which you can install at your discretion and convenience. You can disable the automatic download feature by disabling network connectivity to the NetApp online software repository.
 
 .Health check options
 
@@ -43,7 +55,7 @@ Using NetApp Hybrid Cloud Control (HCC), you can verify that a storage cluster i
 
 .Steps
 
-. Open a web browser and browse to the IP address of the management node:
+. Open the IP address of the management node in a web browser:
 +
 ----
 https://<ManagementNodeIP>
@@ -69,7 +81,7 @@ You can use REST API to verify that a storage cluster is ready to be upgraded. T
 .. Open the management node REST API UI on the management node:
 +
 ----
-https://[management node IP]/mnode
+https://<ManagementNodeIP>/mnode
 ----
 .. Select *Authorize* and complete the following:
 ... Enter the cluster user name and password.
@@ -99,7 +111,7 @@ NOTE: Do not use the `"parent"` value in this section because this is the manage
 .. Open the storage REST API UI on the management node:
 +
 ----
-https://[management node IP]/storage/1/
+https://<ManagementNodeIP>/storage/1/
 ----
 .. Select *Authorize* and complete the following:
 ... Enter the cluster user name and password.
@@ -294,7 +306,7 @@ Sample response:
 ----
 sfupgradecheck failed: Unable to verify latest available version of healthtools.
 ----
-. Download a link:https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740[JSON file] from the NetApp Support Site on a computer that is not the management node and rename it to `metadata.json`.
+. Download a link:https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740[JSON file^] from the NetApp Support Site on a computer that is not the management node and rename it to `metadata.json`.
 . Run the following command:
 +
 ----
