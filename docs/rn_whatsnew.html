@@ -1785,7 +1785,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-13 17:30:34 +0000">05/13/2022</time>
+    <time datetime="2022-05-19 12:38:24 +0000">05/19/2022</time>
     
   
 
@@ -1814,7 +1814,30 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>NetApp periodically updates NetApp HCI to bring you new features, enhancements, and bug fixes. NetApp HCI 1.9P1 includes Element 12.3.2 for storage clusters.</p>
+<p>NetApp periodically updates NetApp HCI to bring you new features, enhancements, and bug fixes. NetApp HCI 1.9P1 includes NetApp Element software 12.3.1 for storage clusters.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/hci19/images/note.svg" alt="Note">
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Element 12.3.2 contains the mitigation that closes the Element software exposure to the Apache Log4j vulnerability. NetApp SolidFire storage clusters with the Virtual Volumes (VVols) feature enabled are exposed to this vulnerability.</p>
+</div>
+<div class="paragraph">
+<p>If your storage cluster is at Element 12.3.1 and the VVols feature is enabled, upgrading to Element software 12.3.2 is highly recommended.</p>
+</div>
+<div class="paragraph">
+<p>If your storage cluster is at Element 12.3.1 and the VVols feature is disabled, upgrading to Element software 12.3.2 is optional.</p>
+</div>
+<div class="paragraph">
+<p>NetApp does not recommend running mixed Element versions in a cluster, except for the duration of the upgrade.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="ulist">
 <ul>
@@ -1822,7 +1845,7 @@
 <p>The <a href="#netapp-hci-1-9p1">NetApp HCI 1.9P1</a> section describes new features and updates in NetApp HCI version 1.9P1.</p>
 </li>
 <li>
-<p>The <a href="#element-12-3-2">Element 12.3.2</a> section describes new features and updates in NetApp Element 12.3.2.</p>
+<p>The <a href="#element-12-3-1">Element 12.3.1</a> section describes new features and updates in NetApp Element 12.3.1.</p>
 </li>
 </ul>
 </div>
@@ -1837,10 +1860,44 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="element-12-3-2">Element 12.3.2</h2>
+<h2 id="element-12-3-1">Element 12.3.1</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Element software 12.3.2 release contains the mitigation that closes the Element software exposure to the Apache Log4j vulnerability. NetApp SolidFire storage clusters with the Virtual Volumes (VVols) feature enabled are exposed to this vulnerability.</p>
+<p>NetApp HCI 1.9P1 includes Element 12.3.1 for storage clusters.</p>
+</div>
+<div class="sect2">
+<h3 id="storage-firmware-bundle-2-99-2">Storage Firmware Bundle 2.99.2</h3>
+<div class="paragraph">
+<p>The Element 12.3.1 release includes the storage firmware bundle version 2.99.2. If your storage cluster is already at Element 12.3, you have the option to simply install the new 2.99.2 firmware bundle.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="netapp-bugs-online-contains-known-and-resolved-issues">NetApp Bugs Online contains known and resolved issues</h3>
+<div class="paragraph">
+<p>Known and resolved issues are listed in the NetApp Bugs Online tool. You can browse these issues for Element and other products at <a href="https://mysupport.netapp.com/site/products/all/details/element-software/bugsonline-tab" target="_blank" rel="noopener">NetApp Bugs Online</a>.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Go to <a href="https://mysupport.netapp.com/site/products/all/details/element-software/bugsonline-tab" target="_blank" rel="noopener">NetApp Bugs Online</a>.</p>
+</li>
+<li>
+<p>In the  <strong>Search by Keyword</strong> field, type in the product name, for example, "Element".</p>
+</li>
+<li>
+<p>Select the <span class="image"><img src="../media/icon_plus.PNG" alt="plus icon"></span>, select the <strong>Fixed in Versions</strong> filter, and select <strong>OK</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/bol_filters.PNG" alt="BOL filters align=&quot;center&quot;"></span></p>
+</div>
+</li>
+<li>
+<p>Select <strong>New Search</strong>.</p>
+</li>
+<li>
+<p>Type the release version in the <strong>Fixed in Versions</strong> field.</p>
+</li>
+</ol>
 </div>
 <h2 id="find-more-information" class="discrete">Find more information</h2>
 <div class="ulist">
@@ -1861,6 +1918,7 @@
 <p><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software" target="_blank" rel="noopener">Firmware and driver versions for NetApp HCI and NetApp Element software</a></p>
 </li>
 </ul>
+</div>
 </div>
 </div>
 </div>
