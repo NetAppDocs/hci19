@@ -6,7 +6,6 @@ keywords: netapp, mnode, management node, rest api, hci
 ---
 
 = Add compute and controller assets to the management node
-
 :hardbreaks:
 :nofooter:
 :icons: font

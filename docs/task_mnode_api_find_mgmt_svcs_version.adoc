@@ -6,7 +6,6 @@ keywords: netapp, hci, management node, management services, version, bundle ver
 ---
 
 = Verify management node OS and services versions
-
 :hardbreaks:
 :nofooter:
 :icons: font

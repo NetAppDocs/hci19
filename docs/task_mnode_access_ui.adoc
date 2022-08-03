@@ -6,7 +6,6 @@ keywords: netapp, mnode, management node, api, hci
 ---
 
 = Access the management node
-
 :hardbreaks:
 :nofooter:
 :icons: font
