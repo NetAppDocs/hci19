@@ -22,7 +22,7 @@ Beginning with the Element 11.3 management node release, the management node des
 
 * You must upgrade to the latest management services bundle before upgrading your Element software.
 
-NOTE: For the latest management services release notes describing major services, new features, bug fixes, and workarounds for each service bundle, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes[the management services release notes^]
+NOTE: For the latest management services release notes describing major services, new features, bug fixes, and workarounds for each service bundle, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes[the management services release notes^].
 
 .What you'll need
 
