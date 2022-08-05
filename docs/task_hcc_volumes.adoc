@@ -6,7 +6,6 @@ keywords: netapp, hci, on premise, volumes, storage, access groups, initiators, 
 ---
 
 = Monitor volumes on your storage cluster
-
 :hardbreaks:
 :nofooter:
 :icons: font

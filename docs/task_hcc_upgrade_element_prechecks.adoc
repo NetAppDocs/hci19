@@ -6,7 +6,6 @@ keywords: netapp, storage prechecks, element upgrade, healthtools, sfupgradechec
 ---
 
 = Run Element storage health checks prior to upgrading storage
-
 :hardbreaks:
 :nofooter:
 :icons: font

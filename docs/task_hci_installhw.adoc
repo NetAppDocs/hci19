@@ -6,7 +6,6 @@ keywords: netapp, hci, on premise, activeiq, active iq, cluster, performance, ra
 ---
 
 = Install H-series hardware
-
 :hardbreaks:
 :nofooter:
 :icons: font

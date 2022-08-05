@@ -6,7 +6,6 @@ keywords: netapp, hci, on premise, cluster, upgrade, element
 ---
 
 = Upgrade sequence overview
-
 :hardbreaks:
 :nofooter:
 :icons: font
