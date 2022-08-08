@@ -43,7 +43,7 @@ image::rancher-install-trident.jpg[Shows the navigation to launch the Trident in
 +
 image::rancher-trident.jpg[The Trident installer on the Catalog page in Rancher.]
 +
-NOTE: On the page that opens, you can select the *Detailed Descriptions* arrow to learn more about the Trident app and also to find the link to the https://netapp-trident.readthedocs.io/en/stable-v20.10/introduction.html[Trident documentation].
+NOTE: On the page that opens, you can select the *Detailed Descriptions* arrow to learn more about the Trident app and also to find the link to the https://netapp-trident.readthedocs.io/en/stable-v20.10/introduction.html[Trident documentation^].
 
 . Select the *Configurations Options* arrow, and enter the credentials and storage configuration information.
 +
