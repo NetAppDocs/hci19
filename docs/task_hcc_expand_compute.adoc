@@ -6,7 +6,6 @@ keywords: netapp, hci, on premise, expand, compute, cluster
 ---
 
 = Expand NetApp HCI compute resources
-
 :hardbreaks:
 :nofooter:
 :icons: font

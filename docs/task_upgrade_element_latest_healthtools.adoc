@@ -6,7 +6,6 @@ keywords: netapp, HealthTools upgrade, sfupdate-healthtools, element
 ---
 
 = Upgrade to the latest HealthTools
-
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -6,7 +6,6 @@ keywords: netapp, hci, on premise, cluster, element, compute node
 ---
 
 = Update compute node drivers
-
 :hardbreaks:
 :nofooter:
 :icons: font

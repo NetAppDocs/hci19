@@ -6,7 +6,6 @@ keywords: netapp, hci, logs, collection, troubleshooting, monitor
 ---
 
 = Collect logs for troubleshooting
-
 :hardbreaks:
 :nofooter:
 :icons: font

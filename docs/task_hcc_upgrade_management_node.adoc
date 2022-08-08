@@ -6,7 +6,6 @@ keywords: netapp, hci, on premise, cluster, management node, mNode, upgrade, 10,
 ---
 
 = Upgrade a management node
-
 :hardbreaks:
 :nofooter:
 :icons: font
