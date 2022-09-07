@@ -6,7 +6,6 @@ keywords: netapp, hci, BMC, connection, credentials, monitor
 ---
 
 = Edit Baseboard Management Controller connection information
-
 :hardbreaks:
 :nofooter:
 :icons: font
