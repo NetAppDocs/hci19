@@ -6,7 +6,6 @@ keywords: netapp, hci, on premise, cluster, management services
 ---
 
 = Update management services
-
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -23,7 +22,7 @@ Beginning with the Element 11.3 management node release, the management node des
 
 * You must upgrade to the latest management services bundle before upgrading your Element software.
 
-NOTE: For the latest management services release notes describing major services, new features, bug fixes, and workarounds for each service bundle, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes[the management services release notes^]
+NOTE: For the latest management services release notes describing major services, new features, bug fixes, and workarounds for each service bundle, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes[the management services release notes^].
 
 .What you'll need
 
@@ -84,6 +83,8 @@ NOTE: If your installation cannot access the internet, only the current software
 . If your installation cannot access the internet, do the following:
 .. Follow the instructions on the page to download and save a management services upgrade package to your computer.
 .. Select *Browse* to locate the package you saved and upload it.
++
+After you upload the package, the upgrade starts automatically.
 
 After the upgrade begins, you can see the upgrade status on this page. During the upgrade, you might lose connection with NetApp Hybrid Cloud Control and have to log back in to see the results of the upgrade.
 

@@ -6,7 +6,6 @@ keywords: netapp, hci, on premise, cluster, element, account, user, volume, hybr
 ---
 
 = Create and manage user accounts by using NetApp Hybrid Cloud Control
-
 :hardbreaks:
 :nofooter:
 :icons: font

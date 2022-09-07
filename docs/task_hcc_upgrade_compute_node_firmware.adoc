@@ -6,7 +6,6 @@ keywords: netapp, hci, on premise, cluster, element, compute node, vmware, upgra
 ---
 
 = Upgrade compute node firmware
-
 :hardbreaks:
 :nofooter:
 :icons: font
