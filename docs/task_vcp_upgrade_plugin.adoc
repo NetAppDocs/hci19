@@ -22,11 +22,7 @@ This upgrade procedure covers the following upgrade scenarios:
 * You are upgrading to Element Plug-in for VMware vCenter Server 4.10, 4.9, 4.8, 4.7, 4.6, 4.5, or 4.4.
 * You are upgrading to a 7.0, 6.7, or 6.5 HTML5 vSphere Web Client.
 +
-[IMPORTANT]
-====
-* The plug-in is not compatible with VMware vCenter Server 8.0 for all Element Plug-in for VMware vCenter Server versions.
-* The plug-in is not compatible with VMware vCenter Server 6.5 for Element Plug-in for VMware vCenter Server 4.6, 4.7, and 4.8.
-====
+IMPORTANT: The plug-in is not compatible with VMware vCenter Server 6.5 for Element Plug-in for VMware vCenter Server 4.6, 4.7, and 4.8.
 
 * You are upgrading to a 6.7 Flash vSphere Web Client.
 +
