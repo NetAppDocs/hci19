@@ -38,7 +38,7 @@ NOTE: When you upgrade from Element Plug-in for vCenter Server 4.x to 5.0, the c
 -- 
 For Element Plug-in for vCenter Server 4.10 or earlier, this upgrade procedure covers the following upgrade scenarios:
 
-* You are upgrading to Element Plug-in for vCenter Server 4.10, 4.9, 4.8, 4.7, 4.6, 4.5, or 4.4.
+* You are upgrading to Element Plug-in for VMware vCenter Server 4.10, 4.9, 4.8, 4.7, 4.6, 4.5, or 4.4.
 * You are upgrading to a 7.0, 6.7, or 6.5 HTML5 vSphere Web Client.
 +
 [IMPORTANT] 
