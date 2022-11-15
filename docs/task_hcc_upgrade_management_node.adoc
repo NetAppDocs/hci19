@@ -28,7 +28,7 @@ Choose one of the following management node upgrade options:
 
 [NOTE]
 ====
-* Management node 12.3.2 contains a security mitigation for storage clusters with the Virtual Volumes (VVols) feature enabled. If your storage cluster is already at Element 12.3 and the VVols feature is enabled, upgrading to 12.3.2 is highly recommended.
+* Management node 12.3.2 contains a security mitigation for storage clusters with the Virtual Volumes (VVols) feature enabled. If your storage cluster is already at Element 12.3 and the VVols feature is enabled, you should upgrade to 12.3.2.
 * There are no additional functionality changes or bug fixes in management node 12.3.1. If you are already running management node 12.3, you do not need to upgrade it to 12.3.1.
 ====
 
