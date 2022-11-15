@@ -20,7 +20,7 @@ NetApp periodically updates NetApp HCI to bring you new features, enhancements, 
 ====
 Element 12.3.2 contains the mitigation that closes the Element software exposure to the Apache Log4j vulnerability. NetApp SolidFire storage clusters with the Virtual Volumes (VVols) feature enabled are exposed to this vulnerability.
 
-If your storage cluster is at Element 12.3.1 and the VVols feature is enabled, upgrading to Element software 12.3.2 is highly recommended.
+If your storage cluster is at Element 12.3.1 and the VVols feature is enabled, you should upgrade to Element software 12.3.2.
 
 If your storage cluster is at Element 12.3.1 and the VVols feature is disabled, upgrading to Element software 12.3.2 is optional.
 
