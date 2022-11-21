@@ -4,7 +4,6 @@ permalink: docs/task_hci_upgrade_all_vsphere.html
 summary: You can upgrade VMware components for a NetApp HCI and take additional steps to re-install vCenter Plug-in.
 keywords: netapp, hci, vSphere components, upgrade, vCenter, ESXi
 ---
-
 = Upgrade your vSphere components for a NetApp HCI system with the Element Plug-in for vCenter Server
 :hardbreaks:
 :nofooter:
