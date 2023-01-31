@@ -37,6 +37,5 @@ The following is an overview of the tasks you need to complete to power on a Net
 * Power on the vCSA.
 * Verify the system and power on additional virtual machines.
 
-[discrete]
 == Find more information
 * link:firmware_driver_versions.html[Supported firmware and ESXi driver versions for NetApp HCI and firmware versions for NetApp HCI storage nodes]
