@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: docs/fw_storage_nodes.html
+keywords: documentation, earlier, previous, versions
+summary: Supported firmware and driver versions for storage nodes.
+---
+= Storage nodes
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+:keywords: hci, earlier, documentation, versions
+
+[.lead]
+include::https://raw.githubusercontent.com/NetAppDocs/hci/main/_include/fw_versions_storage_nodes.adoc[]
