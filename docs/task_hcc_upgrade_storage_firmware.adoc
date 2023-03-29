@@ -87,10 +87,6 @@ If the cluster is up to date and/or no upgrade packages are available, the *Elem
 . Select *Browse* to upload the upgrade package that you downloaded.
 . Wait for the upload to complete. A progress bar shows the status of the upload.
 +
-. Select the drop-down arrow next to the cluster you are upgrading.
-. Select *Browse* to upload the upgrade package that you downloaded.
-. Wait for the upload to complete. A progress bar shows the status of the upload.
-+
 CAUTION: The file upload will be lost if you navigate away from the browser window.
 +
 An on-screen message is displayed after the file is successfully uploaded and validated. Validation might take several minutes. If you navigate away from the browser window at this stage, the file upload is preserved.
