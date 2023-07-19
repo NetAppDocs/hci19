@@ -885,16 +885,6 @@ h| Drive Samsung PM863 (N-SED)
 h| Drive Toshiba Hawk-4 (SED)
 h| Drive Toshiba Hawk-4 (N-SED)
 h| Drive Samsung PM883 (SED)
-h| *Storage Firmware Bundle 2.164.0*
-| 10/20/2022
-| 7.10.18	
-| ae3b8cc	
-| 7d8422bc	
-| GXT5404Q	
-| GXT5103Q	
-| 8ENP7101	
-| 8ENP6101	
-| HXT7A04Q
 h| *Storage Firmware Bundle 2.146.2*
 | 02/22/2022
 | 7.10.18	
