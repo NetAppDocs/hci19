@@ -4,7 +4,6 @@ permalink: docs/concept_rancher_product_overview.html
 summary: Deploying Rancher on NetApp HCI deploys the Rancher Control plane, also referred to as the Rancher Server,  enables you to create on-premises Kubernetes clusters.
 keywords: netapp, hci, rancher, architecture, kubernetes, cluster
 ---
-
 = Rancher on NetApp HCI overview
 :hardbreaks:
 :nofooter:
