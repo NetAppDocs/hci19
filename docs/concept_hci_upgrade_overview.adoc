@@ -17,6 +17,8 @@ You can keep your NetApp HCI system up-to-date after deployment by sequentially 
 
 These components include management services, HealthTools, NetApp Hybrid Cloud Control, Element software, management node, compute firmware, compute drivers, and the Element Plug-in for vCenter Server.​
 
+NOTE: Beginning November 2023, you cannot start a component upgrade using NetApp Hybrid Cloud Control or REST API because the signing key certificates (private and public) expired on November 5, 2023. You can resolve this issue by following the workaround documented in the Knowledge Base article https://kb.netapp.com/onprem/solidfire/Element_OS/SolidFire_and_HCI_upgrades_unable_to_start_due_to_upgrade_package_upload_error[SolidFire and HCI upgrades unable to start due to upgrade package upload error^].
+
 The <<sys_upgrade_seq,system upgrade sequence>> content describes the tasks that are needed to complete a NetApp HCI system upgrade. Ideally you perform these procedures as part of the larger upgrade sequence and not in isolation. If a component-based upgrade or update is needed, see the procedure prerequisites to ensure additional complexities are addressed.
 
 The xref:task_hci_upgrade_all_vsphere.adoc[vSphere upgrade sequence] including Element Plug-in for vCenter Server content describes additional pre- and post-upgrade steps required to re-install the Element Plug-in for vCenter Server.
@@ -69,3 +71,5 @@ NOTE: Upgrading the management node operating system is no longer required to up
 * https://docs.netapp.com/us-en/vcp/index.html[NetApp Element Plug-in for vCenter Server^]
 * https://www.netapp.com/hybrid-cloud/hci-documentation/[NetApp HCI Resources Page^]
 * https://docs.netapp.com/us-en/element-software/upgrade/concept_element_upgrade_overview.html[Upgrade a NetApp SolidFire all-flash storage system^]
+
+// 2023 DEC 13, DOC-4719
