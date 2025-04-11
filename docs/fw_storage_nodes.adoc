@@ -10,7 +10,6 @@ summary: Supported firmware and driver versions for storage nodes.
 :icons: font
 :linkattrs:
 :imagesdir: ../media/
-:keywords: hci, earlier, documentation, versions
 
 [.lead]
 The supported firmware versions for H-series and SolidFire storage nodes.
