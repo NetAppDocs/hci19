@@ -251,10 +251,8 @@ NOTE: For node OS, unattended upgrades for security patches are run on a daily b
 
 The upgrade has finished successfully when the `PercentComplete` indicates `100` and `results` indicates the upgraded version number.
 
-[discrete]
 == Find more information
 
-* https://docs.netapp.com/us-en/vcp/index.html[NetApp Element Plug-in for vCenter Server^]
-* https://www.netapp.com/hybrid-cloud/hci-documentation/[NetApp HCI Resources Page^]
+https://docs.netapp.com/us-en/vcp/index.html[NetApp Element Plug-in for vCenter Server^]
 
 // 2023 FEB 23, DOC-4667

@@ -67,8 +67,6 @@ Currently installed version of HealthTools:
 2020.03.01.09
 ----
 
-[discrete]
 == Find more information
 
 * https://docs.netapp.com/us-en/vcp/index.html[NetApp Element Plug-in for vCenter Server^]
-* https://www.netapp.com/hybrid-cloud/hci-documentation/[NetApp HCI Resources Page^]
