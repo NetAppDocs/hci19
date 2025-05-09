@@ -10,7 +10,6 @@ summary: Supported firmware and driver versions for Compute nodes.
 :icons: font
 :linkattrs:
 :imagesdir: ../media/
-:keywords: hci, earlier, documentation, versions
 
 [.lead]
 The supported firmware and ESXi driver versions for NetApp HCI compute nodes.

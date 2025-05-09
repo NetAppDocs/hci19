@@ -65,11 +65,9 @@ NOTE: Upgrading the management node operating system is no longer required to up
 . link:task_hcc_upgrade_compute_node_drivers.html[Update your compute node drivers].
 . link:task_hcc_upgrade_compute_node_firmware.html[Update your compute node firmware using NetApp Hybrid Cloud Control] or link:task_hcc_upgrade_compute_firmware_ansible.html[Automate your compute firmware upgrades with Ansible].
 
-[discrete]
 == Find more information
 
 * https://docs.netapp.com/us-en/vcp/index.html[NetApp Element Plug-in for vCenter Server^]
-* https://www.netapp.com/hybrid-cloud/hci-documentation/[NetApp HCI Resources Page^]
 * https://docs.netapp.com/us-en/element-software/upgrade/concept_element_upgrade_overview.html[Upgrade a NetApp SolidFire all-flash storage system^]
 
 // 2023 DEC 13, DOC-4719

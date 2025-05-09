@@ -26,7 +26,3 @@ Here are the items you can work with:
 * link:concept_nde_hci_power_off_on.html[Power your NetApp HCI system off or on]
 
 
-
-[discrete]
-== Find more information
-*	https://www.netapp.com/hybrid-cloud/hci-documentation/[NetApp HCI Resources page^]
