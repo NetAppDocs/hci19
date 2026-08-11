@@ -187,10 +187,10 @@ System memory:     3525 MB used / 3840 MB free / 7365 MB total
 Swap:              0 MB used / 0 MB free / 0 MB total
 
 ----
-. If the versions do not match, you should upgrade the OS. See the link:https://community.mellanox.com/s/article/howto-upgrade-switch-os-software-on-mellanox-switch-systems[Mellanox software Upgrade Guide^] for details.
+. If the versions do not match, you should upgrade the OS. See the link:See the link:https://community.mellanox.com/s/article/howto-upgrade-switch-os-software-on-mellanox-switch-systems[Mellanox software Upgrade Guide^] for details.
 
 == Configure the replacement switch
-Perform the steps to configure the replacement switch. See link:https://docs.mellanox.com/display/MLNXOSv381000/Configuration+Management[Mellanox configuration management^] for details.
+Perform the steps to configure the replacement switch. See link:See link:https://docs.mellanox.com/display/MLNXOSv381000/Configuration+Management[Mellanox configuration management^] for details.
 
 .Steps
 . Choose from the option that applies to you:
@@ -247,5 +247,4 @@ Perform the steps to complete the replacement procedure.
 . Return the faulty switch to NetApp.
 
 == Find more information
-* https://www.netapp.com/us/documentation/hci.aspx[NetApp HCI Resources page^]
 * http://docs.netapp.com/sfe-122/index.jsp[SolidFire and Element Software Documentation Center^]
