@@ -64,4 +64,3 @@ TIP: For the best performance and greater security, consider using a dedicated K
 [discrete]
 == Find more information
 * https://rancher.com/docs/rancher/v2.x/en/overview/architecture/[Rancher documentation about architecture^]
-* https://www.netapp.com/us/documentation/hci.aspx[NetApp HCI Resources page^]
